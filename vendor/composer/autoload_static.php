@@ -42,6 +42,7 @@ class ComposerStaticInit0f13e4a9e54450a82fd992c5327ea391
             'Symfony\\Bridge\\Monolog\\' => 23,
             'Symfony\\Bridge\\Doctrine\\' => 24,
             'Sonata\\UserBundle\\' => 18,
+            'Sonata\\TranslationBundle\\' => 25,
             'Sonata\\EasyExtendsBundle\\' => 25,
             'Sonata\\Doctrine\\Tests\\' => 22,
             'Sonata\\Doctrine\\' => 16,
@@ -172,6 +173,10 @@ class ComposerStaticInit0f13e4a9e54450a82fd992c5327ea391
         'Sonata\\UserBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/sonata-project/user-bundle',
+        ),
+        'Sonata\\TranslationBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/translation-bundle',
         ),
         'Sonata\\EasyExtendsBundle\\' => 
         array (

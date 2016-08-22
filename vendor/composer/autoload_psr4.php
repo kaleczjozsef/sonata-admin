@@ -24,6 +24,7 @@ return array(
     'Symfony\\Bridge\\Monolog\\' => array($vendorDir . '/symfony/symfony/src/Symfony/Bridge/Monolog'),
     'Symfony\\Bridge\\Doctrine\\' => array($vendorDir . '/symfony/symfony/src/Symfony/Bridge/Doctrine'),
     'Sonata\\UserBundle\\' => array($vendorDir . '/sonata-project/user-bundle'),
+    'Sonata\\TranslationBundle\\' => array($vendorDir . '/sonata-project/translation-bundle'),
     'Sonata\\EasyExtendsBundle\\' => array($vendorDir . '/sonata-project/easy-extends-bundle'),
     'Sonata\\Doctrine\\Tests\\' => array($vendorDir . '/sonata-project/doctrine-extensions/tests'),
     'Sonata\\Doctrine\\' => array($vendorDir . '/sonata-project/doctrine-extensions/src'),
