@@ -43,6 +43,8 @@ class ComposerStaticInit0f13e4a9e54450a82fd992c5327ea391
             'Symfony\\Bridge\\Doctrine\\' => 24,
             'Sonata\\UserBundle\\' => 18,
             'Sonata\\TranslationBundle\\' => 25,
+            'Sonata\\NotificationBundle\\' => 26,
+            'Sonata\\MediaBundle\\' => 19,
             'Sonata\\IntlBundle\\' => 18,
             'Sonata\\EasyExtendsBundle\\' => 25,
             'Sonata\\Doctrine\\Tests\\' => 22,
@@ -180,6 +182,14 @@ class ComposerStaticInit0f13e4a9e54450a82fd992c5327ea391
         array (
             0 => __DIR__ . '/..' . '/sonata-project/translation-bundle',
         ),
+        'Sonata\\NotificationBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/notification-bundle',
+        ),
+        'Sonata\\MediaBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/media-bundle',
+        ),
         'Sonata\\IntlBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/sonata-project/intl-bundle',
@@ -307,6 +317,17 @@ class ComposerStaticInit0f13e4a9e54450a82fd992c5327ea391
     );
 
     public static $prefixesPsr0 = array (
+        'Z' => 
+        array (
+            'ZendDiagnostics\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/zendframework/zenddiagnostics/src',
+            ),
+            'ZendDiagnosticsTest\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/zendframework/zenddiagnostics/tests',
+            ),
+        ),
         'T' => 
         array (
             'Twig_Extensions_' => 
@@ -373,6 +394,20 @@ class ComposerStaticInit0f13e4a9e54450a82fd992c5327ea391
                 0 => __DIR__ . '/..' . '/jms/parser-lib/src',
             ),
         ),
+        'I' => 
+        array (
+            'Imagine' => 
+            array (
+                0 => __DIR__ . '/..' . '/imagine/imagine/lib',
+            ),
+        ),
+        'G' => 
+        array (
+            'Gaufrette' => 
+            array (
+                0 => __DIR__ . '/..' . '/knplabs/gaufrette/src',
+            ),
+        ),
         'F' => 
         array (
             'FOS\\UserBundle' => 
@@ -409,6 +444,13 @@ class ComposerStaticInit0f13e4a9e54450a82fd992c5327ea391
             'Doctrine\\Common\\Annotations\\' => 
             array (
                 0 => __DIR__ . '/..' . '/doctrine/annotations/lib',
+            ),
+        ),
+        'B' => 
+        array (
+            'Buzz' => 
+            array (
+                0 => __DIR__ . '/..' . '/kriswallsmith/buzz/lib',
             ),
         ),
     );
