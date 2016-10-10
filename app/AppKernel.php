@@ -35,6 +35,9 @@ class AppKernel extends Kernel
 	    //INTERNATIONALIZATION (I18N)
 	    new Sonata\IntlBundle\SonataIntlBundle(),
 
+	    //Classification
+	    new Sonata\ClassificationBundle\SonataClassificationBundle(),
+
             new Sonata\TranslationBundle\SonataTranslationBundle(),
         );
 

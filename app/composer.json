@@ -1,0 +1,5 @@
+{
+    "require": {
+        "sonata-project/classification-bundle": "^3.1"
+    }
+}
