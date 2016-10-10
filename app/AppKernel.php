@@ -2,6 +2,7 @@
 
 use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
+use Sonata\ClassificationBundle\SonataClassificationBundle;
 
 class AppKernel extends Kernel
 {
@@ -32,11 +33,8 @@ class AppKernel extends Kernel
             new Sonata\UserBundle\SonataUserBundle(),
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
 
-	    //INTERNATIONALIZATION (I18N)
-	    new Sonata\IntlBundle\SonataIntlBundle(),
-
-	    //Classification
-	    new Sonata\ClassificationBundle\SonataClassificationBundle(),
+            //INTERNATIONALIZATION (I18N)
+            new Sonata\IntlBundle\SonataIntlBundle(),
 
             new Sonata\TranslationBundle\SonataTranslationBundle(),
         );
