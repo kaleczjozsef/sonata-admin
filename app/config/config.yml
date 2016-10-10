@@ -8,14 +8,18 @@ imports:
 parameters:
     locale: en
 
-#sonata_translation:
-#    locales: [en, hu, fr, it, nl, es]
-#    default_locale: en
+sonata_admin:
+    templates:
+        layout: admin/layout.html.twig
+
+sonata_translation:
+    locales: [en, hu, fr, it, nl, es]
+    default_locale: en
     # here enable the types you need
 #    gedmo:
 #        enabled: true
-#    knplabs:
-#        enabled: true
+    knplabs:
+        enabled: true
     #phpcr:
     #    enabled: true
 
