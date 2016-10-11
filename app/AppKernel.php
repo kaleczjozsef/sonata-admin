@@ -39,6 +39,13 @@ class AppKernel extends Kernel
             new Sonata\ClassificationBundle\SonataClassificationBundle(),
             new Application\Sonata\ClassificationBundle\ApplicationSonataClassificationBundle(),
 
+            //Media Bundle
+
+            new Sonata\MediaBundle\SonataMediaBundle(),
+            new Application\Sonata\MediaBundle\ApplicationSonataMediaBundle(),
+            // You need to add this dependency to make media functional
+            new JMS\SerializerBundle\JMSSerializerBundle(),
+
             new Sonata\TranslationBundle\SonataTranslationBundle(),
         );
 

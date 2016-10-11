@@ -44,8 +44,10 @@ class ComposerStaticInit0f13e4a9e54450a82fd992c5327ea391
             'Sonata\\UserBundle\\' => 18,
             'Sonata\\TranslationBundle\\' => 25,
             'Sonata\\NotificationBundle\\' => 26,
+            'Sonata\\NewsBundle\\' => 18,
             'Sonata\\MediaBundle\\' => 19,
             'Sonata\\IntlBundle\\' => 18,
+            'Sonata\\FormatterBundle\\' => 23,
             'Sonata\\EasyExtendsBundle\\' => 25,
             'Sonata\\Doctrine\\Tests\\' => 22,
             'Sonata\\Doctrine\\' => 16,
@@ -77,9 +79,12 @@ class ComposerStaticInit0f13e4a9e54450a82fd992c5327ea391
         array (
             'Knp\\Menu\\' => 9,
             'Knp\\Bundle\\MenuBundle\\' => 22,
+            'Knp\\Bundle\\MarkdownBundle\\' => 26,
         ),
         'I' => 
         array (
+            'Ivory\\JsonBuilder\\' => 18,
+            'Ivory\\CKEditorBundle\\' => 21,
             'Incenteev\\ParameterHandler\\' => 27,
         ),
         'G' => 
@@ -186,6 +191,10 @@ class ComposerStaticInit0f13e4a9e54450a82fd992c5327ea391
         array (
             0 => __DIR__ . '/..' . '/sonata-project/notification-bundle',
         ),
+        'Sonata\\NewsBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/news-bundle',
+        ),
         'Sonata\\MediaBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/sonata-project/media-bundle',
@@ -193,6 +202,10 @@ class ComposerStaticInit0f13e4a9e54450a82fd992c5327ea391
         'Sonata\\IntlBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/sonata-project/intl-bundle',
+        ),
+        'Sonata\\FormatterBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/formatter-bundle',
         ),
         'Sonata\\EasyExtendsBundle\\' => 
         array (
@@ -269,6 +282,18 @@ class ComposerStaticInit0f13e4a9e54450a82fd992c5327ea391
         'Knp\\Bundle\\MenuBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/knplabs/knp-menu-bundle',
+        ),
+        'Knp\\Bundle\\MarkdownBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/knplabs/knp-markdown-bundle',
+        ),
+        'Ivory\\JsonBuilder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/egeloen/json-builder/src',
+        ),
+        'Ivory\\CKEditorBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/egeloen/ckeditor-bundle',
         ),
         'Incenteev\\ParameterHandler\\' => 
         array (
