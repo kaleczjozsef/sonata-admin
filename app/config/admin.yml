@@ -1,0 +1,9 @@
+services:
+    app.admin.car:
+        class: AppBundle\Admin\Slideshows
+        tags:
+            - { name: sonata.admin.slideshow, manager_type: orm, group: Content, label: Slideshow }
+        arguments:
+            - null
+            - AppBundle\Entity\Slideshow
+            - AppBundle:CRUD

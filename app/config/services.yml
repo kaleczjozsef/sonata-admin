@@ -4,6 +4,12 @@ parameters:
 #    parameter_name: value
 
 services:
+  admin.slider:
+          class: AppBundle\Admin\Content\SlideShow
+          arguments: [~, AppBundle\Entity\Content\SlideShow, ~]
+          tags:
+              - { name: sonata.admin, manager_type: orm, label: Slideshow }
+
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]

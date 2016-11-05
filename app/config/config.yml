@@ -34,7 +34,7 @@ sonata_translation:
 
 framework:
     #esi:             ~
-    translator:      { fallbacks: [en, hu, fr,] }
+    translator:      { fallbacks: [en, hu, fr] }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
