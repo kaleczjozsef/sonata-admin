@@ -16,7 +16,15 @@ class AppKernel extends Kernel
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new AppBundle\AppBundle(),
+
+            //News Bundles
+//            new Sonata\MarkItUpBundle\SonataMarkItUpBundle(),
+            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
+            new Sonata\NewsBundle\SonataNewsBundle(),
+            new Sonata\FormatterBundle\SonataFormatterBundle(),
+            new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
 
             // These are the other bundles the SonataAdminBundle relies on
             new Sonata\CoreBundle\SonataCoreBundle(),
@@ -40,13 +48,14 @@ class AppKernel extends Kernel
             new Application\Sonata\ClassificationBundle\ApplicationSonataClassificationBundle(),
 
             //Media Bundle
-
             new Sonata\MediaBundle\SonataMediaBundle(),
             new Application\Sonata\MediaBundle\ApplicationSonataMediaBundle(),
             // You need to add this dependency to make media functional
             new JMS\SerializerBundle\JMSSerializerBundle(),
 
             new Sonata\TranslationBundle\SonataTranslationBundle(),
+
+            new Application\Sonata\NewsBundle\ApplicationSonataNewsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

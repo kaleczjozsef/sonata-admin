@@ -3,11 +3,19 @@ imports:
     - { resource: security.yml }
     - { resource: services.yml }
     - { resource: sonata_classification.yml }
+    - { resource: sonata_news.yml }
+    - { resource: ivory/ivory_ckeditor.yml }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+assetic:
+    debug:          '%kernel.debug%'
+    use_controller: '%kernel.debug%'
+    filters:
+        cssrewrite: ~
+
 parameters:
-    locale: en
+    locale: hu
 
 sonata_admin:
     templates:
@@ -26,7 +34,7 @@ sonata_translation:
 
 framework:
     #esi:             ~
-    translator:      { fallbacks: [en] }
+    translator:      { fallbacks: [en, hu, fr,] }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -167,3 +175,56 @@ sonata_media:
     providers:
             image:
                 resizer: sonata.media.resizer.square
+
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
+
+    #sonata
+    form:
+        resources:
+            - 'SonataFormatterBundle:Form:formatter.html.twig'
+
+ivory_ck_editor:
+    default_config: default
+    configs:
+        news:
+            toolbar: full
+
+sonata_formatter:
+    formatters:
+        markdown:
+            service: sonata.formatter.text.markdown
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+        #        - sonata.media.formatter.twig #keep this commented unless you are using media bundle.
+
+
+        text:
+            service: sonata.formatter.text.text
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+        #        - sonata.media.formatter.twig
+
+
+        rawhtml:
+            service: sonata.formatter.text.raw
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+        #        - sonata.media.formatter.twig
+
+
+        richhtml:
+            service: sonata.formatter.text.raw
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+        #        - sonata.media.formatter.twig
+
+
+        twig:
+            service: sonata.formatter.text.twigengine
+            extensions: [] # Twig formatter cannot have extensions
